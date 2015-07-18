@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
     def new
         if params[:status] == nil
-            render inline: "bla"
+            render inline: "misha pidr"
         else
             render inline: "eee"
         end
