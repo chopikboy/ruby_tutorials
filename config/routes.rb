@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/help'
 
+  get 'microposts/show' => 'microposts#show'
+
   resources :microposts
   resources :users
   # get 'home/index'
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
   # resources :articles
   
   root 'home#index'
+
 
   get 'articles/new' => 'articles#new'
   get 'articles/bests' => 'articles#bests'

@@ -25,7 +25,9 @@ class MicropostsControllerTest < ActionController::TestCase
   end
 
   test "should show micropost" do
-    get :show, id: @micropost
+    post = microposts(:one)
+
+    get :show, id: post.id
     assert_response :success
   end
 
